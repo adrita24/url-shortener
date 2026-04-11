@@ -71,7 +71,7 @@ app.post("/shorten",async(req,res)=>{
 
     const existingUrl = await Url.findOne({ originalUrl });
     if(existingUrl && !customCode){
-        return res.send(`http://localhost:3000/${existingUrl.shortCode}`)
+        return res.send(`https://url-shortener-full.onrender.com/${existingUrl.shortCode}`)
     }
 
     let shortCode;
@@ -94,7 +94,7 @@ app.post("/shorten",async(req,res)=>{
 
     await newUrl.save();
 
-    res.send(`http://localhost:3000/${shortCode}`);
+    res.send(`https://url-shortener-full.onrender.com/${shortCode}`);
 });
 
 app.get("/:code",async(req,res)=>{
