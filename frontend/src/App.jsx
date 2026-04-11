@@ -19,7 +19,7 @@ function App(){
   const [myUrls, setMyUrls]=useState([]);
   const [showProfile, setShowProfile]=useState(false);
 
-  const BASE_URL="https://url-shortener-backend-6i82.onrender.com";
+  const BASE_URL="https://url-shortener-full.onrender.com";
   const isDisabled=!user && count>=1;
 
   const handleClick = async () => {
