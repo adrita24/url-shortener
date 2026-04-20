@@ -126,7 +126,6 @@ function App(){
 
   return(
     <div>
-      {/* ── Glass Header ── */}
       <header className="glass-header">
         <span className="brand-logo">
           <FontAwesomeIcon icon={faLink} style={{marginRight:"8px", fontSize:"14px"}} />
@@ -157,17 +156,13 @@ function App(){
         </div>
       </header>
 
-      {/* ── Main Content ── */}
       <div className="app-wrapper" style={{marginTop:"60px"}}>
-
-        {/* ── Login nudge ── */}
         {count >= 1 && !user && (
           <p className="msg-warn" style={{marginBottom:"16px"}}>
             ⚠ You've used your free link. Login to generate more.
           </p>
         )}
 
-        {/* ── URL Shortener Panel ── */}
         {!showProfile && (
           <div className="glass-panel">
             <h1 style={{fontSize:"36px", marginBottom:"6px"}}>
@@ -237,7 +232,6 @@ function App(){
               </div>
             )}
 
-            {/* ── Result ── */}
             {shortUrl && (
               <>
                 <hr className="glass-divider" style={{marginTop:"24px"}} />
@@ -252,7 +246,6 @@ function App(){
               </>
             )}
 
-            {/* ── Error ── */}
             {error && (
               <div style={{marginTop:"18px"}}>
                 <p className="msg-error">{error}</p>
@@ -264,7 +257,6 @@ function App(){
           </div>
         )}
 
-        {/* ── Profile Panel ── */}
         {showProfile && (
           <div className="glass-panel profile-header" style={{maxWidth:"600px"}}>
             <div style={{display:"flex", alignItems:"center", justifyContent:"space-between", marginBottom:"20px"}}>
