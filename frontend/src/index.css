@@ -33,7 +33,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* ── Background ── */
 body {
   margin: 0;
   min-height: 100vh;
@@ -58,7 +57,6 @@ body {
   background: rgba(255,255,255,0.01);
 }
 
-/* ── Typography ── */
 h1, h2 {
   font-family: var(--heading);
   font-weight: 500;
@@ -115,7 +113,6 @@ code {
   border: 1px solid var(--glass-border);
 }
 
-/* ── Bootstrap overrides for dark glass theme ── */
 .btn {
   font-family: var(--sans);
   font-weight: 400;
