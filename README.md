@@ -1,4 +1,4 @@
-# SnapLink — URL Shortener
+# LinkSnap — URL Shortener
 
 A full-stack SaaS web application that converts long URLs into clean, shareable short links. Built with React, Node.js, MongoDB, and Firebase, featuring user authentication, click analytics, and a premium upgrade system.
 
