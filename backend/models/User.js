@@ -1,6 +1,6 @@
-const mongoose=require("mongoose");
+const mongoose = require("mongoose");
 
-const userSchema= new mongoose.Schema({
+const userSchema = new mongoose.Schema({
     email: {
         type: String,
         required: true,
@@ -11,9 +11,9 @@ const userSchema= new mongoose.Schema({
         type: Number,
         default: 0
     },
-    isPremium:{
+    isPremium: {
         type: Boolean,
-        deafult: false
+        default: false  
     }
 });
 
